@@ -1,0 +1,202 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7c3c3;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  background-color: transparent;
+}
+
+.logo {
+  background-image: url("/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #131010;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list-item a:hover {
+  color: #0f0f0f;
+}
+
+/* Banner */
+.banner {
+  padding: 60px 80px 40px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-info {
+  flex: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.banner-buttons {
+  padding: 14px 28px;
+  margin-right: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4b24f8;
+  color: #f0f0f7;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons:last-child {
+  background-color: transparent;
+  border: 2px solid #1c1fd3;
+  border-radius: 10px;
+  color: #09090a;
+}
+
+.banner-buttons:hover {
+  background-color: #da8b8b;
+  color: #fff;
+  border-color: #ff4d6d;
+  border-radius: 10px;
+}
+
+.main-image img {
+  width: 460px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Info Items */
+.banner-info {
+  margin-top: 60px;
+}
+
+.banner-info ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.banner-info-item {
+  background-color: #f7c3c3;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.banner-info-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #555;
+}
+.teachers {
+  padding: 80px;
+  background-color: #fff;
+  color: #111;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.teachers-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.teacher-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: hue-rotate(10deg) brightness(1);
+}
+
+.teacher-meta {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.teacher-name {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.teacher-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
